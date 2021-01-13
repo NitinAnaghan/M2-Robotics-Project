@@ -37,7 +37,7 @@ Nitinkumar ANAGHAN
 
 
 ## Introduction
-<p align="justify">Our project is about the navigation of the Turtlebot 3 model robot. As the introduction of Turtlebot 3 burger, it is a programmable robot which runs completely on ROS and Linux. The turtlebot 3 burger that we use has a feature of LiDAR sensor which is a need for doing the SLAM gmapping. This project  requires us to accomplish a few objective which is:</p> 
+<p align="justify">This project is about the navigation of the Turtlebot 3 model robot. As the introduction of Turtlebot 3 burger, it is a programmable robot which runs completely on ROS and Linux. The turtlebot 3 burger that we use has a feature of LiDAR sensor which is a need for doing the SLAM gmapping. This project  requires us to accomplish a few objective which is:</p> 
 
 - Create a script that moves the robot around with simple /cmd_vel publishing. See the range of movement of this new robot model.
 - Create mapping launches, and map the whole environment. To setup the launch file to be able to localize the Turtlebot3 robot.
