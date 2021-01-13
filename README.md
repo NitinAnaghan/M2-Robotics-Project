@@ -228,21 +228,7 @@ We will see the robot move to the goal the we just set.
 ## How to create a navigation program with a set of waypoints using Rviz<br>
 _Objective_: Create a program that allows the Turtlebot3 to navigate within the environment following a set of waypoints. <br> 
 <br>
-_Execution_: The next task is to create a program that allows the Turtlebot3 to navigate within the environment following a set of waypoints. Waypoints locations are presented on the below figures. 
-<p align="center">
-  <img src = "Resources/Images/w1.png">
-</p>
-<p align="center">
-  <img src = "Resources/Images/w2.png">
-</p>
-<p align="center">
-  <img src = "Resources/Images/w3.png">
-</p>
-<br>
-<p align="justify"> Here we got three figures which are the three different waypoints that need to be achieved. To develop a ROS program that allows the robot to navigate to those locations, we first need to know what is the Position(x,y,z) and Orientation(x,y,z, w) coordinates of these waypoints onto the map. Then, we will use the coordinate to define the navigation mission that we submit to the robot’s navigation stack to execute it. Remember that our robot on ROS runs the move_base navigation stack which allows the robot to find a path towards a goal and execute the path following while avoiding obstacles. The setup of the terminal, gazebo and RViz should follow as below for easiness of getting the coordinates.</p>
-<p align="center">
-  <img src = "Resources/Images/amcl.png">
-</p>
+_Execution_: The next task is to create a program that allows the Turtlebot3 to navigate within the environment following a set of waypoints. 
 
 <p align="justify"> The first step is to launch our start_navigation launch that will launch RViz and the mapped map. By using the RViz to visualize the map, we use the 2D Pose estimate to get the waypoint coordinates. After all, it has been set up as below, open another terminal and write rostopic echo /amcl_pose to get the location of the robot on the map. While not closing the terminal, go back to RViz the click on 2D Pose Estimate button, then click on one of the waypoints on the map. Go back to the terminal where the command of rostopic echo /amcl_pose has been running, and you will find the coordinate of the point selected.</p>
 
